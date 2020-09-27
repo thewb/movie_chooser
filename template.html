@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Random Movie</title>
+</head>
+<body bgcolor="#F5F5F5">
+	<center> 
+		<H3>The Random Movie Chosen is: {{ name['name'] }} </H3>
+
+		<video width="470" height="255" poster= {{name['image_link']}} controls>
+    		<source src= {{name['link']}} type="video/{{name['type']}}">
+		</video>
+			<br><br>
+		<form action="/random">
+			<input type="submit" value="Get Another!"/>
+		</form>	
+		<H4>{{ name['snippet'] }} </H4>
+	</center>
+
+</body>
+</html>
